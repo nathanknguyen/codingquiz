@@ -1,5 +1,7 @@
-var questionsCorrect = 0;
-var totalQuestions = 
+var score = 0;
+
+var playerName;
+
 // need start button
 // need next question button
 // need submit button when on the last question
@@ -11,6 +13,8 @@ function takeQuiz() {
 }
 
 function calculateScore() {
-    var score = questionsCorrect / totalQuestions;
+    
     return score;
 }
+
+// button to start and buttons to submit and go to whatever screen
