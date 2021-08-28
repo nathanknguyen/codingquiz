@@ -23,3 +23,16 @@ var timerCount;
 var choice;
 var userChoice;
 var userInitials;
+
+// set and start timer, hide elements on page to start the quiz
+function startTest() {
+    timerCount = 60;
+    startTimer();
+    startPrompt.style.display = "none";
+    questionArea.style.display = "block";
+    correctCheck.style.display = "none";
+    startButton.style.display = "none";
+    highScoreEL.style.display = "none";
+   nextQuestion ();
+  }
+  
