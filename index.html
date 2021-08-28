@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-<body>
-    <div><h1 id="title">Coding Quiz Challenge</h1></div>
-    <button id="start">Start</button>
-    <p id="timer"></p>
-    <div>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+  <body class="bg-light text-dark">
+    <heading class="display-flex my-3">
+      <button id= "highScoreBtn" class="button">View Highscores</button>
+      <h6 id="time">Time: 0</h6>
+    </heading>
+    <article>
+    <h1 class="text-center">Coding Quiz Game</h1>
+    <h4 class="text-center">
+      Try to answer the following code-related questions within the time limit.
+      Keep in mind that incorrect answers will penalize your scoretime by ten
+      seconds!
+    </h4>
+    </article>
+    <div id="centerStart">
+    <button id="start" class="button">Start the Game!</button>
     </div>
-
-    <div id="quiz">
-        <h1 id="question">Question goes here</h1>
-        <div>
-            <button class="quiz-button">A</button>
-            <button class="quiz-button">B</button>
-            <button class="quiz-button">C</button>
-            <button class="quiz-button">D</button>
-        </div>
+    <aside id="highScoreScoreboard" class= "display-none">
+      <h3>Highscores</h3>
+      <div class= "display-list"></div>
+      <h4 id="inputHighScoreHere">1. </h4>
     </div>
- 
-
-<script src="script.js"></script>
-<script type ="text/javascript"></script>
-</body>
-
+    </aside>
+    <main class="text-center display-none">
+      <h3 id="question">Placeholder for question</h3>
+      <div id=optionButtons>
+        <button id="option1" class="button" onclick="choiceClick(this)">Answer 1</button>
+        <button id="option2" class="button" onclick="choiceClick(this)">Answer 2</button>
+        <button id="option3" class="button" onclick="choiceClick(this)">Answer 3</button>
+        <button id="option4" class="button" onclick="choiceClick(this)">Answer 4</button>
+        <h4 id="correctCheck">Correct/incorrect</h4>
+      </div>
+    </main>
+    <script src= "/script.js"></script>
+    <script src = "/questions.js"></script>
+  </body>
 </html>
