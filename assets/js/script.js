@@ -14,3 +14,12 @@ var option = document.querySelector("#optionButtons");
 var highScoreBtn = document.querySelector("#highScoreBtn");
 var highScoreEL = document.querySelector("#highScoreScoreboard");
 var inputHighScoreHere = document.querySelector("#inputHighScoreHere");
+
+// set variables to keep track of
+var currentQuestion;
+var currentQuestionIndex = 0;
+var questionCount = 0;
+var timerCount;
+var choice;
+var userChoice;
+var userInitials;
