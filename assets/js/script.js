@@ -1,0 +1,16 @@
+// Setting variables for everything inside html
+var header = document.querySelector("heading");
+var startPrompt = document.querySelector("article");
+var startButton = document.querySelector("#start");
+var questionArea = document.querySelector("main");
+var questionEL = document.querySelector("#question");
+var option1 = document.querySelector("#option1");
+var option2 = document.querySelector("#option2");
+var option3 = document.querySelector("#option3");
+var option4 = document.querySelector("#option4");
+var timerElement = document.querySelector("#time");
+var correctCheck = document.querySelector("#correctCheck");
+var option = document.querySelector("#optionButtons");
+var highScoreBtn = document.querySelector("#highScoreBtn");
+var highScoreEL = document.querySelector("#highScoreScoreboard");
+var inputHighScoreHere = document.querySelector("#inputHighScoreHere");
