@@ -35,4 +35,26 @@ function startTest() {
     highScoreEL.style.display = "none";
    nextQuestion ();
   }
+
+  // evaluate if question is right
+function checkAnswer () {
+    if (choiceClick.innerText !== questions[currentQuestionIndex].answer.innerText) {
+        timerCount -= 15;
+        timerElement.textContent = timerCount;
+        console.log ("incorrect");
+        correctCheck.textContent = "Incorrect";
+        correctCheck.style.display = "block";
+        currentQuestionIndex++;
+        nextQuestion();
+      //reflect if q was wrong
+    } else {
+        console.log ("correct");
+        correctCheck.textContent = "correct";
+        correctCheck.style.display = "block";
+        currentQuestionIndex++;
+        nextQuestion();
+    }
+}
+
+   
   
