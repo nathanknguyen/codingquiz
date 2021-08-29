@@ -5,6 +5,6 @@ This application is a multiple choice quiz that tests you on your JavaScript fun
 
 # Screenshot and Deployed Application URL
 
-![picture of website](/Assets/images/screenshot.png "screenshot of page")
+![picture of website](/Assets/images/quizapp.png "screenshot of page")
 
 URL for deployed application: 
