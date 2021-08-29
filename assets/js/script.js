@@ -43,16 +43,13 @@ function checkAnswer () {
         timerElement.textContent = timerCount;
         console.log ("incorrect");
         correctCheck.textContent = "Incorrect";
-        correctCheck.style.display = "block";
-        currentQuestionIndex++;
-        nextQuestion();
     } else {
         console.log ("correct");
         correctCheck.textContent = "correct";
-        correctCheck.style.display = "block";
-        currentQuestionIndex++;
-        nextQuestion();
     }
+    correctCheck.style.display = "block";
+    currentQuestionIndex++;
+    nextQuestion();
 }
 
 // Function to move on to the next question
@@ -116,3 +113,4 @@ function choiceClick(clickedChoice) {
 highScoreBtn.addEventListener("click", showHighScores);
 startButton.addEventListener("click", startTest);
 choice.addEventListener("click", choiceClick);
+
