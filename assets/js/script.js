@@ -101,6 +101,17 @@ function showHighScores () {
     highScoreEL.style.display = "block";
 }
 
+// function to record user choice
+function choiceClick(clickedChoice) {
+    var userChoice = clickedChoice.innerText;
+    questionCount++;
+    if ( questionCount < 5){
+     checkAnswer(userChoice);
+    } else{
+      winGame();
+    }
+ }
+
 // Event listeners for all buttons to record what the user clicks
 highScoreBtn.addEventListener("click", showHighScores);
 startButton.addEventListener("click", startTest);
