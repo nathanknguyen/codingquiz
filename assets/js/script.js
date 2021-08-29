@@ -76,6 +76,20 @@ function winGame() {
     option3.innerText = (questions.choices[2])
     option4.innerText = (questions.choices[3])
   }
+
+  // start timer and check if time is up
+  function startTimer() {
+    timer = setInterval(function () {
+      timerCount--;
+      timerElement.textContent = "Time: " + timerCount;
+      if (timerCount < 0){
+        clearInterval(timer);
+        alert ("Game over...")
+        timerElement.textContent = "Time: 0";
+        showHighScores();
+      }
+    }, 1000);
+  }
   
   
 
