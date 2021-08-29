@@ -67,6 +67,16 @@ function winGame() {
     inputHighScoreHere.innerText = "1. " + userInitials +" time left:" + timerCount
     showHighScores();
   }
+
+  // Function to display questions by changing text to the questions
+  function showNextQuestion(questions) {
+    questionEL.innerText = questions.title;
+    option1.innerText = (questions.choices[0])
+    option2.innerText = (questions.choices[1])
+    option3.innerText = (questions.choices[2])
+    option4.innerText = (questions.choices[3])
+  }
+  
   
 
    
