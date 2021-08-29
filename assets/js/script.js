@@ -46,7 +46,6 @@ function checkAnswer () {
         correctCheck.style.display = "block";
         currentQuestionIndex++;
         nextQuestion();
-      //reflect if q was wrong
     } else {
         console.log ("correct");
         correctCheck.textContent = "correct";
