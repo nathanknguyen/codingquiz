@@ -58,50 +58,50 @@ function checkAnswer () {
 // Function to move on to the next question
 function nextQuestion() {
     showNextQuestion(questions[currentQuestionIndex]); 
-  }
+}
   
 // function to prompt user to enter inititals and display the time they had left on the quiz
 function winGame() {
     clearInterval(timer);
     userInitials = window.prompt("Enter your initials");
-    inputHighScoreHere.innerText = "1. " + userInitials +" time left:" + timerCount
+    inputHighScoreHere.innerText = "1. " + userInitials +" time left:" + timerCount;
     showHighScores();
-  }
+}
 
   // Function to display questions by changing text to the questions
-  function showNextQuestion(questions) {
+function showNextQuestion(questions) {
     questionEL.innerText = questions.title;
-    option1.innerText = (questions.choices[0])
-    option2.innerText = (questions.choices[1])
-    option3.innerText = (questions.choices[2])
-    option4.innerText = (questions.choices[3])
-  }
+    option1.innerText = (questions.choices[0]);
+    option2.innerText = (questions.choices[1]);
+    option3.innerText = (questions.choices[2]);
+    option4.innerText = (questions.choices[3]);
+}
 
-  // start timer and check if time is up
-  function startTimer() {
+// start timer and check if time is up
+function startTimer() {
     timer = setInterval(function () {
-      timerCount--;
-      timerElement.textContent = "Time: " + timerCount;
-      if (timerCount < 0){
-        clearInterval(timer);
-        alert ("Game over...")
-        timerElement.textContent = "Time: 0";
-        showHighScores();
-      }
+        timerCount--;
+        timerElement.textContent = "Time: " + timerCount;
+        if (timerCount < 0) {
+            clearInterval(timer);
+            alert ("Game over...");
+            timerElement.textContent = "Time: 0";
+            showHighScores();
+        }
     }, 1000);
-  }
+}
 
-  // Function for high score page
-  function showHighScores () {
+// Function for high score page
+function showHighScores () {
     clearInterval(timer);
     startPrompt.style.display = "none";
     questionArea.style.display = "none";
     correctCheck.style.display = "none";
     startButton.style.display = "block";
     highScoreEL.style.display = "block";
-  }
-  
-  
+}
 
-   
-  
+// Event listeners for all buttons to record what the user clicks
+highScoreBtn.addEventListener("click", showHighScores);
+startButton.addEventListener("click", startTest);
+choice.addEventListener("click", choiceClick);
