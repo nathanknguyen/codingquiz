@@ -55,5 +55,19 @@ function checkAnswer () {
     }
 }
 
+// Function to move on to the next question
+function nextQuestion() {
+    showNextQuestion(questions[currentQuestionIndex]); 
+  }
+  
+// function to prompt user to enter inititals and display the time they had left on the quiz
+function winGame() {
+    clearInterval(timer);
+    userInitials = window.prompt("Enter your initials");
+    inputHighScoreHere.innerText = "1. " + userInitials +" time left:" + timerCount
+    showHighScores();
+  }
+  
+
    
   
