@@ -90,6 +90,16 @@ function winGame() {
       }
     }, 1000);
   }
+
+  // Function for high score page
+  function showHighScores () {
+    clearInterval(timer);
+    startPrompt.style.display = "none";
+    questionArea.style.display = "none";
+    correctCheck.style.display = "none";
+    startButton.style.display = "block";
+    highScoreEL.style.display = "block";
+  }
   
   
 
