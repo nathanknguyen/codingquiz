@@ -8,3 +8,4 @@ This application is a multiple choice quiz that tests you on your JavaScript fun
 ![picture of website](/Assets/images/quizapp.png "screenshot of page")
 
 URL for deployed application: 
+https://nathanknguyen.github.io/codingquiz/
