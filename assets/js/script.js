@@ -113,4 +113,3 @@ function choiceClick(clickedChoice) {
 highScoreBtn.addEventListener("click", showHighScores);
 startButton.addEventListener("click", startTest);
 choice.addEventListener("click", choiceClick);
-
