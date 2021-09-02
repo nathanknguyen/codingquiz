@@ -33,8 +33,8 @@ function startTest() {
     correctCheck.style.display = "none";
     startButton.style.display = "none";
     highScoreEL.style.display = "none";
-   nextQuestion ();
-  }
+    nextQuestion();
+}
 
   // evaluate if question is right
 function checkAnswer () {
